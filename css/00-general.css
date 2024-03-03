@@ -1,0 +1,148 @@
+.card-title,
+.font-h1,
+.footer-col .font-h2,
+figure {
+    margin: 0;
+}
+.card,
+.search-button,
+body {
+    background-color: #fff;
+}
+*,
+.input-research {
+    font-family: Raleway, sans-serif;
+    box-sizing: border-box;
+}
+*,
+.search,
+em {
+    font-style: normal;
+}
+.nav-a,
+.search {
+    text-align: center;
+}
+.card,
+.grid-accommodations,
+button:hover {
+    cursor: pointer;
+}
+:root {
+    --main-color: #0065fc;
+    --main-bg-color: #f2f2f2;
+    --filter-bg-color: #deebff;
+    --global-margin: 50px;
+    --global-margin_x2: 100px;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+.black,
+a {
+    color: #000;
+}
+.neutralStar {
+    color: var(--main-bg-color);
+}
+a {
+    text-decoration: none;
+}
+.font-p,
+strong {
+    font-weight: 400;
+}
+.card-title,
+.font-h1,
+.font-h2 {
+    font-weight: 700;
+}
+.font-h1 {
+    font-size: 1.375em;
+    line-height: 26px;
+    letter-spacing: -0.05px;
+}
+.font-h2 {
+    font-size: 1.125em;
+    line-height: 21px;
+}
+.font-filter-button {
+    font-weight: 700;
+    font-size: 1.063em;
+    line-height: 20px;
+}
+.card-title,
+.font-p {
+    font-size: 1em;
+    line-height: 19px;
+}
+.card-subtitle {
+    font-weight: 400;
+    font-size: 0.875em;
+    line-height: 16px;
+    margin: 8px 0;
+}
+.euro {
+    font-weight: 600;
+}
+.card {
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.card img {
+    object-fit: cover;
+}
+.text-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    /* width: 14.623vw; */
+    max-width: 200px;
+    /* border: 1px solid #000; */
+}
+html {
+    width: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.main-container {
+    position: relative;
+    width: 100%;
+    max-width: calc(1440px - 100px);
+    margin: 0 3vw;
+}
+section {
+    position: relative;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .main-container {
+        margin: 0 4.883vw;
+    }
+    .text-overflow {
+        overflow: unset;
+        text-overflow: unset;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main-container {
+        width: calc(100vw - 10.667vw);
+        margin: 0 auto;
+    }
+    footer {
+        background-color: var(--main-bg-color);
+        /* padding-bottom: 20px; */
+    }
+    /* section {
+        max-width: 672px;
+        width: 100%;
+    } */
+}
