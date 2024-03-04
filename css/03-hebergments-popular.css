@@ -12,7 +12,6 @@
     padding: 32px 30px 30px;
     max-height: 620px;
 }
-
 .empty_c-g {
     height: 100%;
     width: auto;
@@ -41,14 +40,12 @@
     align-content: space-between;
     justify-content: space-between;
     width: 100%;
-    /* flex: 1 1 600px; */
     max-width: 811px;
     gap: 20px 1.8%;
     max-height: 451px;
     min-height: 450px;
     min-width: 600px;
 }
-
 .grid-accommodations {
     flex: 1 1 calc(33.333% - 3.6%);
     max-width: 251px;
@@ -108,7 +105,7 @@
     min-height: 130px;
 }
 .card-title {
-    margin: 11px 10px 5px 0;
+    margin: 11px 0px 5px 0;
 }
 .accommodations-cards .card-rating,
 .card-rating {
@@ -116,6 +113,7 @@
     position: relative;
     left: -1px;
 }
+
 .accommodations-cards .card-rating {
     top: -5px;
     letter-spacing: 5px;
@@ -139,7 +137,6 @@
     position: relative;
     top: -5px;
 }
-
 .popular-group-cards .card:nth-child(2) {
     position: relative;
     top: 2px;
@@ -157,21 +154,18 @@
     }
     .grid-accommodations:nth-child(4) .card-content,
     .grid-accommodations:nth-child(5) .card-content,
-    .grid-accommodations:nth-child(6) .card-content {
-        position: relative;
-        top: -0px;
-    }
-    .popular-group-cards .card:nth-child(1),
+    .grid-accommodations:nth-child(6) .card-content,
+    .popular-group-cards .card:first-child,
     .popular-group-cards .card:nth-child(2),
     .popular-group-cards .card:nth-child(3) {
         position: relative;
-        top: 0px;
+        top: 0;
     }
     .popular .card-subtitle {
-        margin: 8px 0 8px 0px;
+        margin: 8px 0;
     }
     .popular .card-title {
-        margin: 9px 10px 5px 0px;
+        margin: 9px 10px 5px 0;
     }
     .accommodations-and-popular {
         min-width: unset;
@@ -196,7 +190,6 @@
         flex: unset;
         margin: unset;
     }
-
     .accommodations,
     .accommodations-cards,
     .popular {
@@ -262,6 +255,11 @@
     }
 }
 @media screen and (max-width: 768px) {
+    .accommodations h1,
+    .popular-group-cards .card:first-child {
+        top: 2px;
+        position: relative;
+    }
     .accommodations-and-popular,
     .activity-in-marseille,
     .card,
@@ -278,6 +276,13 @@
     }
     .accommodations-and-popular {
         gap: 15px;
+    }
+    .accommodations-cards,
+    .popular-group-cards {
+        display: flex;
+        gap: 4vw;
+        max-width: 672px;
+        width: 100%;
     }
     .accommodations-and-popular section {
         border-radius: 0;
@@ -302,13 +307,9 @@
         margin: auto;
     }
     .popular-group-cards {
-        display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
-        gap:  4vw;
         margin: 15px auto auto;
-        max-width: 672px;
-        width: 100%;
         height: 464px;
     }
     .popular-group-cards .card {
@@ -319,7 +320,6 @@
         max-width: 100%;
         min-height: 144px;
     }
-
     .popular-group-cards img {
         width: 32.5%;
         height: 134px;
@@ -337,25 +337,18 @@
     .popular-group-cards .card-rating i {
         letter-spacing: -4px;
     }
-
     .accommodations h1 {
         margin-top: 20px;
-        position: relative;
-        top: 2px;
     }
     .accommodations .font-h2 {
         position: relative;
         top: -10px;
     }
     .accommodations-cards {
-        display: flex;
         flex-flow: column nowrap;
-        gap: 4vw;
-        width: 100%;
         height: unset;
         min-width: unset;
         max-height: unset;
-        max-width: 672px;
         margin-top: -10px;
     }
     .grid-accommodations {
@@ -367,19 +360,14 @@
         border: 5px solid #fff;
         flex: unset;
     }
-    .popular-group-cards .card:nth-child(1) {
-        position: relative;
-        top: 2px;
-    }
     .popular-group-cards .card:nth-child(3) {
         position: relative;
-        top: -0px;
+        top: 0;
     }
-    .grid-accommodations:nth-child(1) {
+    .grid-accommodations:first-child {
         position: relative;
         top: -4px;
     }
-
     .grid-accommodations:nth-child(3) {
         order: 3;
         position: relative;
@@ -400,7 +388,6 @@
         position: relative;
         top: -2px;
     }
-
     .grid-accommodations .card-rating {
         letter-spacing: 4px;
         position: relative;

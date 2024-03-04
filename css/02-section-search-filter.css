@@ -28,7 +28,6 @@
 .search-button:hover {
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.35);
 }
-
 input {
     border: none;
     outline: 0;
@@ -48,16 +47,18 @@ input {
 }
 .location {
     font-size: 18px;
-    padding: 11px 17.5px 17px 17.5px;
+    padding: 11px 17.5px 17px;
     background: #f2f2f2;
     border: 0 solid red;
     border-radius: 15px 0 0 15px;
     position: relative;
     left: -1px;
+    top: 1px;
 }
 .location:hover,
 .search {
     background-color: #0065fc;
+    border: 1px solid #0065fc;
 }
 .search {
     padding: 14px 18px 14.5px 16.5px;
@@ -108,9 +109,6 @@ input {
     font-size: 1.375em;
 }
 .filter a {
-    position: relative;
-    top: 0.5px;
-    left: 1px;
     display: block;
     height: 22px;
 }
@@ -144,7 +142,6 @@ input {
 .hotel {
     display: none;
 }
-
 button:hover {
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.35);
 }
@@ -164,36 +161,27 @@ button:active {
 }
 .filter:first-child i {
     position: relative;
-    /* left: -1px; */
     top: 1px;
     font-size: 1.188em;
 }
-.filter:nth-child(2) i {
-    position: relative;
-    left: 2px;
-    top: -0.5px;
-}
 .filter:nth-child(3) i {
     position: relative;
-    left: -2px;
     top: -0.25px;
+    left: -4px;
 }
 .filter:nth-child(4) i {
     position: relative;
-    /* left: 1px; */
     top: 0.25px;
     font-size: 1.26em;
 }
-.filter i,
-.filter a {
+.filter a,
+.filter i {
     position: relative;
     top: 0.25px;
     left: -2px;
 }
-.filter:nth-child(3) i {
-    left: -4px;
-}
 .filter:nth-child(2) i {
+    position: relative;
     left: 0;
     top: -0.5px;
 }
@@ -247,12 +235,18 @@ button:active {
     }
 }
 @media screen and (max-width: 768px) {
+    .filter a,
+    .location,
+    .location i,
+    .search,
+    .search i,
+    .search-button {
+        position: relative;
+    }
     .section-search-filter {
         max-width: 608px;
-        margin: auto;
-        margin-top: 30px;
+        margin: 30px auto auto;
     }
-
     .desktop {
         display: none;
     }
@@ -260,12 +254,6 @@ button:active {
     .logo,
     .search-button {
         align-self: center;
-    }
-    .filter a,
-    .location,
-    .search,
-    .search i {
-        position: relative;
     }
     .input-research,
     .search {
@@ -277,20 +265,17 @@ button:active {
         color: #fff;
         border-radius: 15px;
     }
-
     .search-button {
         max-width: 335px;
         width: 89.333vw;
         min-height: 48px;
-        position: relative;
     }
     .input-research {
         max-width: 234px;
         width: 57vw;
         min-width: 240px;
-        /* width: auto; */
         padding-left: 53px;
-        padding-right: 0px;
+        padding-right: 0;
         margin: 0;
         position: absolute;
         left: 20px;
@@ -302,14 +287,13 @@ button:active {
         top: -0.5px;
     }
     .location i {
-        position: relative;
         left: 3.5px;
     }
     .search {
         padding: 15.5px;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
         min-height: 49px;
-        top: 0px;
+        top: 0;
     }
     .search i {
         display: block;
