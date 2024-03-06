@@ -4,35 +4,32 @@
     width: calc(100% + 60px);
     min-width: 984px;
     margin-left: -30px;
+    /* background: aqua; */
 }
 .accommodations,
 .popular {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 32px 30px 30px;
+    padding: 2.353% 2.206% 2.206% 2.206%;
     max-height: 620px;
 }
-.empty_c-g {
-    height: 100%;
-    width: auto;
-    flex: 0 1 10px;
-}
+
 .accommodations {
     width: 62%;
-    flex: 1 1 600px;
+    flex: 1 1 600px; /* flex: 1 Occupe tout l'espace, 1 rétrécit si nécessaire, min-width de 600px. */
     max-width: 871px;
     min-width: 600px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    margin: 0 5px 0 16px;
+    margin: 0 5px 0 15px;
 }
 .popular {
     width: 32%;
     flex: 1 1 256px;
     max-width: 430px;
     min-width: 256px;
-    margin: 0 16px 0 0;
+    margin: 0 15px 0 0;
 }
 .accommodations-cards {
     display: flex;
@@ -41,7 +38,7 @@
     justify-content: space-between;
     width: 100%;
     max-width: 811px;
-    gap: 20px 1.8%;
+    gap: 15px;
     max-height: 451px;
     min-height: 450px;
     min-width: 600px;

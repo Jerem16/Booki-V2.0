@@ -26,7 +26,8 @@
     margin: 18px 0 0;
 }
 .search-button:hover {
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.35);
+    filter: drop-shadow(1px 2px 1px  rgba(0, 0, 0, 0.25));
+    -webkit-filter: drop-shadow(1px 2px 1px  rgba(0, 0, 0, 0.25));
 }
 input {
     border: none;
@@ -47,12 +48,16 @@ input {
 }
 .location {
     font-size: 18px;
-    padding: 11px 17.5px 17px;
+    padding: 14px 17.5px 14px 17px;
     background: #f2f2f2;
     border: 0 solid red;
     border-radius: 15px 0 0 15px;
     position: relative;
     left: -1px;
+    /* top: 1px; */
+}
+.location i {
+    position: relative;
     top: 1px;
 }
 .location:hover,
@@ -287,7 +292,8 @@ button:active {
         top: -0.5px;
     }
     .location i {
-        left: 3.5px;
+        left: 2.5px;
+        top: -1px;
     }
     .search {
         padding: 15.5px;

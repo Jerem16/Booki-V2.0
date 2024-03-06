@@ -2,10 +2,10 @@
     height: auto;
     margin-top: 33px;
     min-width: 964px;
-    padding: 0 30px;
+    position: relative;
 }
 .activity-in-marseille h1 {
-    padding: 30px 30px 35px 0;
+    padding: 30px 2.206% 35px 2.206%;
 }
 .full-row_100 {
     display: flex;
@@ -14,8 +14,10 @@
     justify-content: space-between;
     width: auto;
     height: 100%;
-    padding: 0 30px auto;
-    gap: 30px;
+    gap: 2.083%;
+    max-width: 1280px;
+    margin: auto;
+    min-width: 964px;
 }
 .activity-column {
     flex: 1;
@@ -55,18 +57,32 @@
 @media screen and (max-width: 1024px) {
     .activity-in-marseille {
         margin: 35px auto auto;
-        min-width: 738px;
+        min-width: 729px;
         max-width: 864px;
         padding: 0;
     }
     .activity-in-marseille h1 {
         margin: auto;
-        padding: 32px 30px 33px 0px;
+        padding: 32px 0px 33px 120px;
+        margin-left: -11.719vw;
+        /* background: aqua; */
     }
     .full-row_100 {
         flex-flow: nowrap;
         align-content: space-between;
         gap: 2.93vw;
+        gap: unset;
+        min-width: unset;
+    }
+    .activity-column {
+        margin: 0 5px;
+        max-width: 195px;
+    }
+    .activity-column:first-child {
+        margin-left: 0;
+    }
+    .activity-column:last-child {
+        margin-right: 0;
     }
     .activity-in-marseille img {
         height: 200px;
@@ -105,7 +121,7 @@
         width: auto;
         height: 200px;
         opacity: 1;
-        margin-top: 0;
+        margin: unset;
         min-width: calc(100% - 20px);
     }
     .activity-in-marseille img {
